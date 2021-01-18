@@ -1,4 +1,4 @@
-package com.gconsentini.BankApi
+package com.gconsentini.bankapi
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
