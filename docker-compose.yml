@@ -1,0 +1,10 @@
+version: '3'
+services:
+  bankapi:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      SERVER_PORT: 8089
+    ports:
+      - '8089:8089'
