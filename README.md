@@ -45,7 +45,7 @@ chmod 777 ./gradlew
 * http://localhost:8080/swagger-ui/
 * http://localhost:8089/swagger-ui/
 
-## API alguns exemplos
+## API examples
 
 **`POST -> /accounts/create`**
 
