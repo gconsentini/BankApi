@@ -63,7 +63,7 @@ Creates an account
 {
   "name": "Gustavo Consentini",
   "document": "88504758028",
-  "balance": 0.0
+  "balance": 0
 }
 ```
 
@@ -82,8 +82,13 @@ Makes a deposit on an account
 **Return:**
 ```json
 {
-  "name": "Gustavo Consentini",
-  "document": "88504758028"
+  "accountId": "c6b100a5-2f7e-41a7-8b1b-6998c7f32d4c",
+  "targetAccountId": null,
+  "amount": 1000,
+  "type": "DEPOSIT",
+  "balanceBefore": 0.00,
+  "balanceAfter": 1005.00,
+  "createDateTime": 1611023784.262992600
 }
 ```
 
@@ -103,8 +108,13 @@ Withdraw some value from an account
 **Return:**
 ```json
 {
-  "name": "Gustavo Consentini",
-  "document": "88504758028"
+  "accountId": "c6b100a5-2f7e-41a7-8b1b-6998c7f32d4c",
+  "targetAccountId": null,
+  "amount": 800,
+  "type": "TAKEOUT",
+  "balanceBefore": 1005.00,
+  "balanceAfter": 197.00,
+  "createDateTime": 1611023803.577546600
 }
 ```
 
@@ -126,8 +136,13 @@ Makes a transfer of a value between two accounts
 **Return:**
 ```json
 {
-  "name": "Gustavo Consentini",
-  "document": "88504758028"
+  "accountId": "f09976af-8e4a-42b6-9082-8bfa358d023b",
+  "targetAccountId": "c6b100a5-2f7e-41a7-8b1b-6998c7f32d4c",
+  "amount": 100,
+  "type": "TRANSFER",
+  "balanceBefore": 1005.00,
+  "balanceAfter": 905.00,
+  "createDateTime": 1611023836.251815100
 }
 ```
 
@@ -138,15 +153,9 @@ Return an account with some infos and the balance.
 **Return:**
 ```json
 {
-  "books": [
-    {
-      "description": "string",
-      "id": 0,
-      "isbn": "string",
-      "language": "string",
-      "title": "string"
-    }
-  ],
-  "numberBooks": 0
+  "id": "f09976af-8e4a-42b6-9082-8bfa358d023b",
+  "name": "Gustavo",
+  "document": "42392545073",
+  "balance": 905.00
 }
 ```
