@@ -23,7 +23,7 @@ or
 
 ## How to run the app locally
 
-Through Docker, with docker-compose
+Through Docker, with docker-compose, or you could just run the `BankApiApplication.kt` through any IDE  such as `IntelliJ`
 
 ```docker-compose up --build --force-recreate```
 
